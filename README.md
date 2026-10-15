@@ -64,10 +64,7 @@ npm run lint     # перевірка коду (oxlint)
 
 ## Демо-версія
 
-Посилання на розгорнутий проєкт (Vercel / Netlify):
-
-> TODO: вставити посилання після деплою, наприклад:
-> `https://my-react-counter.vercel.app`
+Живе демо (Vercel): https://home-work-react-stateful-stateless.vercel.app
 
 ## Деплой (коротко)
 
@@ -80,4 +77,4 @@ Netlify: New site from Git → Build `npm run build` → Publish `dist`.
 - [x] Є stateful (`useState`) і stateless (тільки `props`) компоненти в окремих файлах.
 - [x] Код-стайл: `const`, зрозумілі імена, деструктуризація пропсів.
 - [x] Опціонально: класовий компонент-аналог.
-- [ ] Деплой + посилання на демо (додати сюди після публікації).
+- [x] Деплой + посилання на демо (додано вище).
