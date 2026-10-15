@@ -1,0 +1,135 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.hint {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.display {
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--code-bg);
+  margin-bottom: 16px;
+}
+
+.display-value {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-h);
+  font-variant-numeric: tabular-nums;
+}
+
+.display-meta {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.controls button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.controls button:hover {
+  border-color: var(--accent-border);
+}
+
+.controls button:active {
+  transform: scale(0.97);
+}
+
+.controls .primary {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+.controls .secondary {
+  opacity: 0.8;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.step input {
+  width: 70px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.compare ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+}
